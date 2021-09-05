@@ -4,6 +4,9 @@ from .models import Lead
 from django.urls import reverse
 from . import forms
 
+class Landing(generic.TemplateView):
+    template_name = "landing.html"
+
 class LeadListView(generic.ListView):
     template_name = "leads/lead_list.html"
 
